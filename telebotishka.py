@@ -27,13 +27,13 @@ def callback_message(call):
 
         # bot.register_callback_query_handler(call, second_level) ереносит в след функцию
     elif call.data == 'prostrel':
-        video = open('media/prostrel.mp4','rb')
+        video = open(r'C:\Users\Ученик\Desktop\lavrentiy\prostrel.mp4','rb')
         bot.send_video(call.message.chat.id, video)
     elif call.data == 'rasskidi':
-        videe = open('media/rsskid0.mp4','rb')
-        vider = open('media/raskid1.mp4','rb')
-        videq = open('media/gg.mp4','rb')
-        videi = open('media/w.mp4','rb')
+        videe = open(r'C:\Users\Ученик\Desktop\lavrentiy\rsskid0.mp4','rb')
+        vider = open(r'C:\Users\Ученик\Desktop\lavrentiy\raskid1.mp4','rb')
+        videq = open(r'C:\Users\Ученик\Desktop\lavrentiy\gg.mp4','rb')
+        videi = open(r'C:\Users\Ученик\Desktop\lavrentiy\w.mp4','rb')
         bot.send_video(call.message.chat.id, videe)
         bot.send_video(call.message.chat.id, vider)
         bot.send_video(call.message.chat.id, videq)
